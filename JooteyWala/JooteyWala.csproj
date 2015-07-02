@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94E8DA0F-D96E-44AB-8BBD-4C0AD3B6F31D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JooteyWala</RootNamespace>
+    <AssemblyName>JooteyWala</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nspring">
+      <HintPath>..\..\..\GitRepository\bin\nspring.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web\Css\etalage.css" />
+    <Content Include="Web\Css\form.css" />
+    <Content Include="Web\Css\megamenu.css" />
+    <Content Include="Web\Css\style.css" />
+    <Content Include="Web\General\Cntrl_Banner.ascx" />
+    <Content Include="Web\General\Cntrl_Footer.ascx" />
+    <Content Include="Web\General\Cntrl_HomeContent.ascx" />
+    <Content Include="Web\General\Cntrl_menuBar.ascx" />
+    <Content Include="Web\General\Cntrl_ProductDesc.ascx" />
+    <Content Include="Web\General\Cntrl_ProductList.ascx" />
+    <Content Include="Web\General\Cntrl_TopHeader.ascx" />
+    <Content Include="Web\General\Home.aspx" />
+    <Content Include="Web\General\ProductDesc.aspx" />
+    <Content Include="Web\General\ProductList.aspx" />
+    <Content Include="Web\images\arrow.png" />
+    <Content Include="Web\images\arrow2.gif" />
+    <Content Include="Web\images\arrows.png" />
+    <Content Include="Web\images\as.png" />
+    <Content Include="Web\images\b-arrow.png" />
+    <Content Include="Web\images\banner1.jpg" />
+    <Content Include="Web\images\banner100.jpg" />
+    <Content Include="Web\images\banner2.jpg" />
+    <Content Include="Web\images\border.png" />
+    <Content Include="Web\images\b_star.png" />
+    <Content Include="Web\images\down_arrow.png" />
+    <Content Include="Web\images\f_icon.png" />
+    <Content Include="Web\images\f_icon1.png" />
+    <Content Include="Web\images\f_icon2.png" />
+    <Content Include="Web\images\img-sprite.png" />
+    <Content Include="Web\images\JooteyWaleLogo.jpg" />
+    <Content Include="Web\images\logo.png" />
+    <Content Include="Web\images\nav_img.jpg" />
+    <Content Include="Web\images\nav_img1.jpg" />
+    <Content Include="Web\images\nav_img2.jpg" />
+    <Content Include="Web\images\nz.png" />
+    <Content Include="Web\images\pic.jpg" />
+    <Content Include="Web\images\pic1.jpg" />
+    <Content Include="Web\images\pic10.jpg" />
+    <Content Include="Web\images\pic11.jpg" />
+    <Content Include="Web\images\pic2.jpg" />
+    <Content Include="Web\images\pic3.jpg" />
+    <Content Include="Web\images\pic4.jpg" />
+    <Content Include="Web\images\pic5.jpg" />
+    <Content Include="Web\images\pic6.jpg" />
+    <Content Include="Web\images\pic7.jpg" />
+    <Content Include="Web\images\pic8.jpg" />
+    <Content Include="Web\images\pic9.jpg" />
+    <Content Include="Web\images\pk.png" />
+    <Content Include="Web\images\plus.png" />
+    <Content Include="Web\images\radius.png" />
+    <Content Include="Web\images\srl.png" />
+    <Content Include="Web\images\star.png" />
+    <Content Include="Web\images\s_arrow.png" />
+    <Content Include="Web\images\t1.jpg" />
+    <Content Include="Web\images\t2.jpg" />
+    <Content Include="Web\images\t3.jpg" />
+    <Content Include="Web\images\t4.jpg" />
+    <Content Include="Web\images\t5.jpg" />
+    <Content Include="Web\images\t6.jpg" />
+    <Content Include="Web\images\uk.png" />
+    <Content Include="Web\images\us.png" />
+    <Content Include="Web\images\wish.png" />
+    <Content Include="Web\images\zoom.png" />
+    <Content Include="Web\js\easing.js" />
+    <Content Include="Web\js\jquery.etalage.min.js" />
+    <Content Include="Web\js\jquery.flexisel.js" />
+    <Content Include="Web\js\jquery.jscrollpane.min.js" />
+    <Content Include="Web\js\jquery.min.js" />
+    <Content Include="Web\js\jquery.wmuSlider.js" />
+    <Content Include="Web\js\megamenu.js" />
+    <Content Include="Web\js\move-top.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\CommonLayer\Connection.cs" />
+    <Content Include="App_Code\CommonLayer\CString.cs" />
+    <Content Include="App_Code\CommonLayer\ErrorLogger.cs" />
+    <Content Include="App_Code\CommonLayer\UserInfo.cs" />
+    <Content Include="App_Code\CommonLayer\UserSession.cs" />
+    <Content Include="App_Code\DataLayer\CashOnDelivery.cs" />
+    <Content Include="App_Code\DataLayer\DataFetchConn.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\General\Cntrl_Banner.ascx.cs">
+      <DependentUpon>Cntrl_Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_Banner.ascx.designer.cs">
+      <DependentUpon>Cntrl_Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_Footer.ascx.cs">
+      <DependentUpon>Cntrl_Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_Footer.ascx.designer.cs">
+      <DependentUpon>Cntrl_Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_HomeContent.ascx.cs">
+      <DependentUpon>Cntrl_HomeContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_HomeContent.ascx.designer.cs">
+      <DependentUpon>Cntrl_HomeContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_menuBar.ascx.cs">
+      <DependentUpon>Cntrl_menuBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_menuBar.ascx.designer.cs">
+      <DependentUpon>Cntrl_menuBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_ProductDesc.ascx.cs">
+      <DependentUpon>Cntrl_ProductDesc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_ProductDesc.ascx.designer.cs">
+      <DependentUpon>Cntrl_ProductDesc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_ProductList.ascx.cs">
+      <DependentUpon>Cntrl_ProductList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_ProductList.ascx.designer.cs">
+      <DependentUpon>Cntrl_ProductList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_TopHeader.ascx.cs">
+      <DependentUpon>Cntrl_TopHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Cntrl_TopHeader.ascx.designer.cs">
+      <DependentUpon>Cntrl_TopHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\General\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\ProductDesc.aspx.cs">
+      <DependentUpon>ProductDesc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Master\JooteyWala.Master.cs">
+      <DependentUpon>JooteyWala.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Master\JooteyWala.Master.designer.cs">
+      <DependentUpon>JooteyWala.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web\Master\JooteyWala.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\images\arrows.psd" />
+    <None Include="Web\images\fb.psd" />
+    <None Include="Web\images\g+.psd" />
+    <None Include="Web\images\img-sprite.psd" />
+    <None Include="Web\images\logo.psd" />
+    <None Include="Web\images\radius.psd" />
+    <None Include="Web\images\social.psd" />
+    <None Include="Web\images\star.psd" />
+    <None Include="Web\images\s_arrow.psd" />
+    <None Include="Web\images\tw.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>38931</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

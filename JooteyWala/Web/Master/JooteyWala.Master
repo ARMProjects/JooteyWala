@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JooteyWala.Master.cs" Inherits="JooteyWala.Web.Master.mstJooteyWala" %>
+<%@ Register TagPrefix="topHeader" TagName="topHeaderTag" Src="~/Web/General/Cntrl_TopHeader.ascx" %>
+<%@ Register TagPrefix="menuBar" TagName="menuBarTag" Src="~/Web/General/Cntrl_menuBar.ascx" %>
+<%@ Register TagPrefix="footerBar" TagName="footerBarTag" Src="~/Web/General/Cntrl_Footer.ascx" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head id="Head1" runat="server">
+    <title>ARM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../Css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Css/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.easydropdown.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function () {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function () {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function (e) {
+                var $clicked = $(e.target);
+                if (!$clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function () {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+      </script>
+      <!-- start menu -->     
+      <link href="../Css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+      <script type="text/javascript" src="../js/megamenu.js"></script>
+      <script>          $(document).ready(function () { $(".megamenu").megamenu(); });</script>
+      <!-- end menu -->
+
+
+      <!-- START - Identified only for ProductDesc Page(single.html) -->
+      
+    <script type="text/javascript" src="../js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" id="sourcecode">
+        $(function () {
+            $('.scroll-pane').jScrollPane();
+        });
+		</script>
+    <!----details-product-slider--->
+	<!-- Include the Etalage files -->
+	<link rel="stylesheet" href="../css/etalage.css">
+	<script src="../js/jquery.etalage.min.js"></script>
+	<!-- Include the Etalage files -->
+	<script>
+	    jQuery(document).ready(function ($) {
+
+	        $('#etalage').etalage({
+	            thumb_image_width: 300,
+	            thumb_image_height: 400,
+
+	            show_hint: true,
+	            click_callback: function (image_anchor, instance_id) {
+	                alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+	            }
+	        });
+	        // This is for the dropdown list example:
+	        $('.dropdownlist').change(function () {
+	            etalage_show($(this).find('option:selected').attr('class'));
+	        });
+
+	    });
+    </script>
+    <!----//details-product-slider--->	
+  
+      <!-- END - Identified only for ProductDesc Page(single.html) -->
+
+      <!-- top scrolling -->
+      <script type="text/javascript" src="../js/move-top.js"></script>
+      <script type="text/javascript" src="../js/easing.js"></script>
+      <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+              $(".scroll").click(function (event) {
+                  event.preventDefault();
+                  $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+              });
+          });
+      </script>
+</head>
+<body>
+
+    <form id = "mainForm" runat="server">
+        
+      <div class="header-top">        
+        <%--<asp:ContentPlaceHolder ID="topHeaderHolder" runat="server">
+        </asp:ContentPlaceHolder>--%>
+        <topHeader:topHeaderTag ID="topHeaderHolder" runat="server" />
+      </div>
+
+      <div class="header-bottom">
+        <%--<asp:ContentPlaceHolder ID="bottomHeaderHolder" runat="server">
+        </asp:ContentPlaceHolder>--%>
+        <menuBar:menuBarTag ID="menuBarHolder" runat="server" />
+      </div>
+
+      <div>
+        <asp:ContentPlaceHolder ID="mainHolder" runat="server">
+        </asp:ContentPlaceHolder>
+      </div>
+      
+      <div class="footer">
+        <%--<asp:ContentPlaceHolder ID="footerHolder" runat="server">
+        </asp:ContentPlaceHolder>--%>
+        <footerBar:footerBarTag ID="footerHolder" runat="server" />
+      </div>
+
+      <script type="text/javascript">
+          $(document).ready(function () {
+              var defaults = {
+                  containerID: 'toTop', // fading element id
+                  containerHoverID: 'toTopHover', // fading element hover id
+                  scrollSpeed: 1200,
+                  easingType: 'linear'
+              };
+
+              $().UItoTop({ easingType: 'easeOutQuart' });
+          });
+      </script>
+      <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    </form>
+
+</body>
+
+
+</html>
