@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Cntrl_ProductList.ascx.cs" Inherits="JooteyWala.Web.General.Cntrl_ProductList" %>
 
 
-
     <div class="login">
         <div class="wrap">
             <div class="rsidebar span_1_of_left">
@@ -158,7 +157,7 @@
                                                         <asp:Label ID="lblDescription" runat="server" Text='<%#Eval("Description") %>'/>
                                                      </p>
                                                         <div class="grid_img">
-							                            <div class="css3"><img src="../../images/pic11.jpg" alt=""/></div>
+							                            <div class="css3"><img src="../images/pic11.jpg" alt=""/></div>
 							                            <div class="mask1">
 								                            <div class="info">Quick View</div>
 							                            </div>
@@ -175,7 +174,7 @@
 		                        <td>
 			                        <ul class="list2">
 					                        <li>
-						                        <img src="../../images/plus.png" alt=""/>
+						                        <img src="../images/plus.png" alt=""/>
 						                        <ul class="icon1 sub-icon1 profile_img">
 							                        <li><a class="active-icon c1" href="#">Add To Bag </a>
 								                        <ul class="sub-icon1 list">

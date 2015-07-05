@@ -170,13 +170,13 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\CommonLayer\Connection.cs" />
-    <Content Include="App_Code\CommonLayer\CString.cs" />
-    <Content Include="App_Code\CommonLayer\ErrorLogger.cs" />
-    <Content Include="App_Code\CommonLayer\UserInfo.cs" />
-    <Content Include="App_Code\CommonLayer\UserSession.cs" />
+    <Compile Include="App_Code\CommonLayer\Connection.cs" />
+    <Compile Include="App_Code\CommonLayer\CString.cs" />
+    <Compile Include="App_Code\CommonLayer\ErrorLogger.cs" />
+    <Compile Include="App_Code\CommonLayer\UserInfo.cs" />
+    <Compile Include="App_Code\CommonLayer\UserSession.cs" />
     <Content Include="App_Code\DataLayer\CashOnDelivery.cs" />
-    <Content Include="App_Code\DataLayer\DataFetchConn.cs" />
+    <Compile Include="App_Code\DataLayer\DataFetchConn.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
