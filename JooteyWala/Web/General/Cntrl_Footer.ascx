@@ -57,7 +57,7 @@
             
         <div class="content-top">
             <div class="lsidebar span_1_of_c1">
-                <p>JooteyWal Social Network Connect</p>
+                <%--<p>JooteyWal Social Network Concnet</p>--%>
             </div>
             <div class="cont span_2_of_c1">
                 <div class="social">

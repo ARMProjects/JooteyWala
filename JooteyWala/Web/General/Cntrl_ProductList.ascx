@@ -162,7 +162,7 @@
 								                            <div class="info">Quick View</div>
 							                            </div>
 						                            </div>
-						                            <div class="price"><i class="fa fa-inr"></i> Rs.                                                   
+						                            <div class="price"><i class="fa fa-inr"></i>                                                   
                                                         <asp:Label ID="lblMRP" runat="server" Text='<%#Eval("MRP") %>'/> /-
                                                     </div>
 					                            </div>

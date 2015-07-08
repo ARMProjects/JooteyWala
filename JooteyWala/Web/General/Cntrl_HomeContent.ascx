@@ -4,7 +4,7 @@
 
 <div class="main">
     <div class="wrap">
-        <div class="content-top">
+<%--        <div class="content-top">
             <div class="lsidebar span_1_of_c1">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
             </div>
@@ -56,7 +56,7 @@
                 <div class="clear"> </div>
             </div>
             <div class="clear"></div>
-        </div>
+        </div>--%>
         <div class="content-bottom">
             <div class="box1">
                 <div class="col_1_of_3 span_1_of_3">
@@ -66,7 +66,7 @@
                             <h3 class="m_1">Lorem ipsum dolor sit amet</h3>
                             <p class="m_2">Lorem ipsum</p>
                             <div class="grid_img">
-                                <div class="css3"><img src="../images/banner100.jpg" alt=""/></div>
+                                <div class="css3"><img src="../images/pic5.jpg" alt=""/></div>
                                 <div class="mask">
                                 <div class="info">Quick View</div>
                                 </div>
