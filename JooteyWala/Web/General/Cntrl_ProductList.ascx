@@ -157,7 +157,11 @@
                                                         <asp:Label ID="lblDescription" runat="server" Text='<%#Eval("Description") %>'/>
                                                      </p>
                                                         <div class="grid_img">
-							                            <div class="css3"><img src="../images/pic11.jpg" alt=""/></div>
+							                            <div class="css3">
+                                                            <%--<img src="../images/pic11.jpg" alt=""/>--%>
+                                                            <%--<asp:Image ID= "Image1" runat="server" ImageUrl='../images/<%Eval("ItemName") %>' />--%>
+                                                            <img src="../images/<%# DataBinder.Eval(Container.DataItem, "ItemName") %>" alt=""/>
+                                                        </div>
 							                            <div class="mask1">
 								                            <div class="info">Quick View</div>
 							                            </div>
@@ -181,7 +185,7 @@
 									                        <li><h3>Quantity</h3><a href=""></a>                                                    
                                                                 <asp:Label ID="lblQuantity" runat="server" Text='<%#Eval("Quantity") %>'/>
                                                             </li>
-									                        <li><p>Lorem ipsum dolor sit amet, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+									                        <li><p>Temp description need to put here, Description  <a href="">Click here, More Details</a></p></li>
 								                        </ul>
 							                        </li>
 						                        </ul>
