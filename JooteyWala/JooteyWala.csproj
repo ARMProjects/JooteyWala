@@ -81,8 +81,10 @@
     <Content Include="Web\General\Cntrl_ProductList.ascx" />
     <Content Include="Web\General\Cntrl_TopHeader.ascx" />
     <Content Include="Web\General\Home.aspx" />
+    <Content Include="Web\General\Login.aspx" />
     <Content Include="Web\General\ProductDesc.aspx" />
     <Content Include="Web\General\ProductList.aspx" />
+    <Content Include="Web\General\Register.aspx" />
     <Content Include="Web\images\arrow.png" />
     <Content Include="Web\images\arrow2.gif" />
     <Content Include="Web\images\arrows.png" />
@@ -177,6 +179,8 @@
     <Compile Include="App_Code\CommonLayer\UserSession.cs" />
     <Content Include="App_Code\DataLayer\CashOnDelivery.cs" />
     <Compile Include="App_Code\DataLayer\DataFetchConn.cs" />
+    <Compile Include="App_Code\DataLayer\UserDetailsDL.cs" />
+    <Compile Include="App_Code\Schema\Customer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,6 +238,13 @@
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Web\General\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Web\General\ProductDesc.aspx.cs">
       <DependentUpon>ProductDesc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -241,6 +252,13 @@
     <Compile Include="Web\General\ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\General\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web\Master\JooteyWala.Master.cs">
       <DependentUpon>JooteyWala.Master</DependentUpon>

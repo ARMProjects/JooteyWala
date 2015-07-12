@@ -147,7 +147,7 @@
                         <table>
 	                        <tr>
 		                        <td>
-			                            <a href="single.html">
+			                            <a href="Productdesc.aspx">
 				                            <div class="view1 view-fifth1">
 					                            <div class="top_box">
 						                            <h3 class="m_1"><%--Lorem ipsum dolor sit amet</h3>--%>
@@ -160,7 +160,7 @@
 							                            <div class="css3">
                                                             <%--<img src="../images/pic11.jpg" alt=""/>--%>
                                                             <%--<asp:Image ID= "Image1" runat="server" ImageUrl='../images/<%Eval("ItemName") %>' />--%>
-                                                            <img src="../images/<%# DataBinder.Eval(Container.DataItem, "ItemName") %>" alt=""/>
+                                                            <img src="../images/<%# DataBinder.Eval(Container.DataItem, "MediumImage") %>" alt=""/>
                                                         </div>
 							                            <div class="mask1">
 								                            <div class="info">Quick View</div>

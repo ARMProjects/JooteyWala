@@ -7,13 +7,13 @@
         <article style="position: relative; width: 100%; opacity: 1;">
             <div class="banner-wrap">
                 <div class="slider-left">
-                <img src="../images/banner100.jpg" alt=""/> 
+                <img src="../images/banner1.jpg" alt=""/> 
                 </div>
                 <div class="slider-right">
                 <h1>Classic</h1>
                 <h2>White</h2>
                 <p>Lorem ipsum dolor sit amet</p>
-                <div class="btn"><a href="shop.html">Shop Now</a></div>
+                <div class="btn"><a href="ProductList.aspx">Shop Now</a></div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -27,7 +27,7 @@
                 <h1>Classic</h1>
                 <h2>White</h2>
                 <p>Lorem ipsum dolor sit amet</p>
-                <div class="btn"><a href="shop.html">Shop Now</a></div>
+                <div class="btn"><a href="ProductList.aspx">Shop Now</a></div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -41,7 +41,7 @@
                 <h1>Classic</h1>
                 <h2>White</h2>
                 <p>Lorem ipsum dolor sit amet</p>
-                <div class="btn"><a href="shop.html">Shop Now</a></div>
+                <div class="btn"><a href="ProductList.aspx">Shop Now</a></div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -55,7 +55,7 @@
                 <h1>Classic</h1>
                 <h2>White</h2>
                 <p>Lorem ipsum dolor sit amet</p>
-                <div class="btn"><a href="shop.html">Shop Now</a></div>
+                <div class="btn"><a href="ProductList.aspx">Shop Now</a></div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -69,7 +69,7 @@
                 <h1>Classic</h1>
                 <h2>White</h2>
                 <p>Lorem ipsum dolor sit amet</p>
-                <div class="btn"><a href="shop.html">Shop Now</a></div>
+                <div class="btn"><a href="ProductList.aspx">Shop Now</a></div>
                 </div>
                 <div class="clear"></div>
             </div>

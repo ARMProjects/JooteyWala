@@ -3,14 +3,14 @@
 
 <div class="wrap">
     <div class="logo">
-               <a href="index.htm"><img src="../images/JooteyWaleLogo.jpg" alt=""/></a>
+               <a href="Home.aspx"><img src="../images/JooteyWaleLogo.jpg" alt=""/></a>
             </div>
     <div class="cssmenu">
                <ul>
-                  <li class="active"><a href="register.html">Sign up & Save</a></li>
-                  <li><a href="shop.html">Store Locator</a></li>
-                  <li><a href="login.html">My Account</a></li>
-                  <li><a href="checkout.html">CheckOut</a></li>
+                  <li class="active"><a href="Login.aspx">Sign in</a></li>
+                  <li><a href="Register.aspx">Register</a></li>
+                  <li><a href="Login.aspx">My Account</a></li>
+                  <li><a href="">CheckOut</a></li>
                </ul>
             </div>
     <ul class="icon2 sub-icon2 profile_img">
