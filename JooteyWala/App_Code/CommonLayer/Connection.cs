@@ -35,7 +35,7 @@ public class Connection
         string sCompName = System.Environment.MachineName.ToString();
         if (sCompName == "BHOWAD-PC")
             sConString = ConfigurationManager.ConnectionStrings["RakeshConnString"].ToString();
-        else if (sCompName == "MACNA-VAIO\\MACNA")
+        else if (sCompName == "MACNA-VAIO")
             sConString = ConfigurationManager.ConnectionStrings["ManishConnString"].ToString();
         else if (sCompName == "KUMRAWAT-PC")
             sConString = ConfigurationManager.ConnectionStrings["AkhilConnString"].ToString();
