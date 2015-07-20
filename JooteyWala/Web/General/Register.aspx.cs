@@ -50,7 +50,7 @@ namespace JooteyWala.Web.General
                 //ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "Information submited successfully");
                 ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "err_msg", "alert('Information submited successfully');", true);
                 GenerateMail();
-                // Response.Redirect("Login.aspx");
+                 Response.Redirect("Login.aspx");
             }
             // return intresult;
         }
